@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>880</width>
+    <height>802</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>561</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Номер</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Название</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="filters">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>Пусто</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Номер рецепта</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Название блюда</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="filter_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Фильтр&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addButton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>10</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Добавить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteButton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>60</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Удалить</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="filterEdit">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>60</y>
+      <width>301</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="searchButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Поиск</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="errorLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="updButton">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>50</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Обновить</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="diseaseBox">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>10</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>Пусто</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Сахарный диабет</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Нарушение функции почек</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Сердечная недостаточность</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Нарушение функции поджелудочной железы</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ожирение</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="receiptButton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>120</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Рецепт</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
